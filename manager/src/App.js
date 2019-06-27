@@ -6,6 +6,7 @@ import firebase from 'firebase';
 import ReduxThunk from 'redux-thunk';
 import reducers from './reducers';
 import LoginForm from './components/LoginForm';
+import Router from './Router';
 
 class App extends Component {
   componentWillMount() {
@@ -27,9 +28,9 @@ class App extends Component {
 
     return (
       <Provider store={store}>
-        <SafeAreaView style={{ flex: 1 }}>
-          <LoginForm />
-        </SafeAreaView>
+        {/* <SafeAreaView style={{ flex: 1 }}> */}
+          <Router />
+        {/* </SafeAreaView> */}
       </Provider>
     );
   }
