@@ -3,10 +3,10 @@ import { View } from 'react-native';
 
 const CardSection = (props) => {
   const { containerStyle } = styles;
-  const { children } = props;
+  const { children, style } = props;
 
   return (
-    <View style={containerStyle}>
+    <View style={[ containerStyle, style ]}>
       {children}
     </View>
   );
